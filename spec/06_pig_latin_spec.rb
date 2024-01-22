@@ -49,5 +49,8 @@ describe "#translate" do
   # Test-driving bonus:
   # * write a test asserting that capitalized words are still capitalized (but with a different initial capital letter, of course)
   # * retain the punctuation from the original phrase
-
+  it "retain the punctuation form the original phrase" do
+  s = translate("Pas de chauve à Ajaccio, mais à Calvi si !")
+  expect(s).to eq("aspay eday auvechay àay ajaccio,ay aismay àay alvicay isay !ay")
+  end
 end
